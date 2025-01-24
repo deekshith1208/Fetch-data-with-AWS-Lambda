@@ -22,17 +22,17 @@ The DynamoDB table will store user data.
    - Wait until the table status is `ACTIVE`.
    - Select **Explore Table Items**.
    - Click **Create Item** and switch to the **JSON View**.
-   - Add the following JSON data and create the item:
-     ```json
-     {
-       "userid": "1",
-       "name": "Test User",
-       "email": "test@example.com"
-     }
-     ```
+  
+     ![Image](https://github.com/user-attachments/assets/b9f2c884-46b5-448b-b84a-0e5c5160497a)
 
----
+     ![Image](https://github.com/user-attachments/assets/fcc1e12f-384c-420c-8c4c-5f6ad9b75d9e)
 
+     ![Image](https://github.com/user-attachments/assets/bfd1cd3c-7603-4c50-a232-f418adbf2667)
+     
+    - Add the following JSON Code and create the item:
+
+      ![Image](https://github.com/user-attachments/assets/2b47830c-c7d1-4974-87fe-2742c3e21b58)
+      
 ## Step 2: Set Up a Lambda Function
 AWS Lambda allows you to run code without managing servers. This function will retrieve data from the DynamoDB table.
 
