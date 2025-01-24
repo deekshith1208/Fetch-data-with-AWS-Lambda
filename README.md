@@ -51,7 +51,7 @@ AWS Lambda allows us to run code without managing servers. This function will re
 
      
 
-1. **Write Code**
+2. **Write Code**
    - Replace the region with your region ID.
    - Add the following code to your Lambda function:
      ```javascript
@@ -92,7 +92,7 @@ AWS Lambda allows us to run code without managing servers. This function will re
 
 ---
 
-![Image](https://github.com/user-attachments/assets/5d2e7e03-3cce-4639-915d-e574dace95ce)
+![Image](https://github.com/user-attachments/assets/f9ce34b0-2610-445c-a206-a212f952e15d)
 
 ## Step 3: Write a Lambda Function Test
 
@@ -103,34 +103,25 @@ AWS Lambda allows us to run code without managing servers. This function will re
      "userId": "1"
    }
    ```
+
+   ![Image](https://github.com/user-attachments/assets/6785f8f3-aca9-4aeb-bc35-4585b339f4f1)
+   
 3. Click **Test**.
+![Image](https://github.com/user-attachments/assets/afc98e7f-bd8f-4ce5-aa94-1802cc8a0244) 
 
 If the code runs successfully but cannot access DynamoDB, proceed to the next step to grant necessary permissions.
 
 ---
 
+![Image](https://github.com/user-attachments/assets/f0e2ad37-9ada-4e41-94e9-a4d63e4f7dd5)
+
 ## Step 4: Grant DynamoDB Access to Lambda
-
-1. Navigate to the Lambda function's **Configuration** tab.
-2. Select **Permissions** and click on the role name.
-3. Add permissions by attaching the `AmazonDynamoDBReadOnlyAccess` policy.
-4. Click **Add Permissions**.
-
----
-
-## Final Step: Retest Lambda Function
-
-After adding permissions, retest the Lambda function by using the **Test** tab.
-
----
-
-## Additional Security: Use an Inline Policy
-To secure access even further, replace the read-only policy with an inline policy.
-
-1. Navigate to the **Configuration** tab of the Lambda function.
+1. Navigate to the **Configuration** tab of the Lambda function.  
 2. Select **Permissions**.
-3. Remove the `AmazonDynamoDBReadOnlyAccess` policy.
-4. Add an inline policy with the following JSON code:
+  
+   ![Image](https://github.com/user-attachments/assets/b12562d4-ab14-46e0-bd79-5b9d987b19ac)
+   
+3. Add an inline policy with the following JSON code:
    ```json
    {
      "Version": "2012-10-17",
@@ -148,9 +139,18 @@ To secure access even further, replace the read-only policy with an inline polic
      ]
    }
    ```
-5. Provide a policy name and create the policy.
+4. Provide a policy name and create the policy.
 
 ---
+
+![Image](https://github.com/user-attachments/assets/27a53e88-744a-42da-9726-42af4433b3f6)
+
+## Final Step: Retest Lambda Function
+
+After adding permissions, retest the Lambda function by using the **Test** tab.
+
+---
+![Image](https://github.com/user-attachments/assets/f81a666a-3736-456f-bfd0-07a4d6d76029)
 
 Congratulations! You have successfully set up an AWS Lambda function to retrieve data from a DynamoDB table. Ensure you replace placeholders (`YOUR-REGION`, `YOUR-ACCOUNT-ID`, `YOUR-TABLE-NAME`) with your actual values where applicable.
 
