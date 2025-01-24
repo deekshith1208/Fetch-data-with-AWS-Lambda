@@ -16,6 +16,8 @@ The DynamoDB table will store user data.
    - Set the partition key: `userid`.
    - Use the default settings and create the table.
 
+     ![Image](https://github.com/user-attachments/assets/33a15f64-38b7-488d-bcc2-c76ecfd69266)
+
 2. **Add an Item**
    - Wait until the table status is `ACTIVE`.
    - Select **Explore Table Items**.
