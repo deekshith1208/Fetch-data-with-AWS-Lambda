@@ -34,15 +34,24 @@ The DynamoDB table will store user data.
       ![Image](https://github.com/user-attachments/assets/2b47830c-c7d1-4974-87fe-2742c3e21b58)
       
 ## Step 2: Set Up a Lambda Function
-AWS Lambda allows you to run code without managing servers. This function will retrieve data from the DynamoDB table.
+AWS Lambda allows us to run code without managing servers. This function will retrieve data from the DynamoDB table.
+
+![Image](https://github.com/user-attachments/assets/5c57e187-86ae-4090-8a88-381348741a8f)
 
 1. **Create Function**
    - Navigate to **AWS Lambda** > **Create Function**.
    - Set the function name: `RetrieveUserData`.
+
+![Image](https://github.com/user-attachments/assets/46d1d2d5-fba7-4781-9a4c-55acfc4ede0b)
+
    - Change the default execution role by selecting **Create a new role with basic Lambda permissions**.
    - Create the function.
 
-2. **Write Code**
+![Image](https://github.com/user-attachments/assets/5d2e7e03-3cce-4639-915d-e574dace95ce)
+
+     
+
+1. **Write Code**
    - Replace the region with your region ID.
    - Add the following code to your Lambda function:
      ```javascript
@@ -82,6 +91,8 @@ AWS Lambda allows you to run code without managing servers. This function will r
    - Deploy the function.
 
 ---
+
+![Image](https://github.com/user-attachments/assets/5d2e7e03-3cce-4639-915d-e574dace95ce)
 
 ## Step 3: Write a Lambda Function Test
 
