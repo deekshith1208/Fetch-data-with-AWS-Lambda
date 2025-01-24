@@ -1,5 +1,5 @@
 # Fetch-data-with-AWS-Lambda
-AWS PROJECT
+AWS Three-Tier Architecture Project
 
 # Retrieve DynamoDB Table Data using AWS Lambda Function
 
